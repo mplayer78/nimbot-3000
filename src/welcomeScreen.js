@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { StyledInput } from "./StyledInput";
 import StyledButton from "./assets/styledButton";
-import { GameContext } from "./App";
+import { GameContext } from "./state/GameContext";
 
 export function WelcomeScreen(props) {
-  const { state, dispatch } = useContext(GameContext);
+  const { dispatch } = useContext(GameContext);
   return (
     <>
       <h1>Welcome to the NimBOT 3000</h1>

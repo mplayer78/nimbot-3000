@@ -3,11 +3,12 @@ import MyTurn from "./myTurn";
 import YourTurn from "./yourTurn";
 import Counter from "./assets/counter";
 import IWon from "./iWon";
-import { GameContext } from "./App";
+import { GameContext } from "./state/GameContext";
 
 export default function(props) {
-  const { state, dispatch } = useContext(GameContext);
+  const { state } = useContext(GameContext);
   let counterArray = [];
+  //populate array to map over later
   for (let i = state.counter; i > 0; i--) {
     counterArray.push(i);
   }

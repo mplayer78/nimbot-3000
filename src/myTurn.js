@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { GameContext } from "./App";
+import { GameContext } from "./state/GameContext";
 import { useContext } from "react";
 
 export default function MyTurn(props) {
@@ -12,7 +12,7 @@ export default function MyTurn(props) {
     return () => {
       clearTimeout(time);
     };
-  }, []);
+  });
   return (
     <>
       <h3>

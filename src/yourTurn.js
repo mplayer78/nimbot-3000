@@ -1,9 +1,9 @@
 import React from "react";
 import StyledButton from "./assets/styledButton";
-import { GameContext } from "./App";
+import { GameContext } from "./state/GameContext";
 import { useContext } from "react";
 
-export default function(props) {
+export default function() {
   const { dispatch } = useContext(GameContext);
   return (
     <>
